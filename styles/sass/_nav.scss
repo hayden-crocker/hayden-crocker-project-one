@@ -1,0 +1,12 @@
+.topNav ul {
+    padding: 0;
+    display: flex;
+        .topNav li{
+            list-style: none;
+                .topNav a{
+                    font-family: $mainFont;
+                    text-decoration: none;
+                    color: $fontColor;
+                }
+        }
+}

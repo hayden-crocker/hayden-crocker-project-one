@@ -1,6 +1,8 @@
 @import 'setup';
 @import 'typography';
 @import 'colors';
+@import 'nav';
+
 
 // FONT AWESOME ICONS
 
@@ -10,8 +12,10 @@
 // <i class="fas fa-tv"></i>
 // <i class="fas fa-phone"></i>
 
-// CONTACT PAGE 
-// 
-// <i class="fab fa-twitter"></i>
-// 
-// 
+header {
+    background-color: $primaryColor;
+    font-family: $h1Font;
+        h1 {
+            @include fontSize(5rem)
+        }
+}
