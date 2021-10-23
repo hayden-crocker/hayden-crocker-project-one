@@ -1,0 +1,11 @@
+button {
+    background-color: lighten($buttonColor, 10%);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 1rem;
+        a{
+            text-decoration: none;
+            @include fontSize (1rem);
+            font-weight: 400;
+        }
+}

@@ -13,6 +13,7 @@
                 a{
                     color: $fontColor;
                     text-decoration: none;
+                    font-family: $mainFont;
                         &:hover,
                         &:focus{
                             color: $backgroundColor;
@@ -22,7 +23,12 @@
 }        
 
 .topNav li:nth-child(3){
-    font-size: 2rem;
-    font-family: $h1Font;
-    padding: 20px 25px;
+    padding: 0;
+        & p {
+            margin: 0;
+            padding: 20px 25px;
+            font-size: 2rem;
+            font-family: $h1Font;
+            text-transform: uppercase;
+        }
 }

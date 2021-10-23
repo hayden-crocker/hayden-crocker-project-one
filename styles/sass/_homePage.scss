@@ -1,0 +1,45 @@
+
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.headerText{
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    width: auto;
+}
+
+.homePage h1{
+    flex-grow: 1;
+    font-size: 125px;
+}
+
+.headerImage {
+    box-shadow: 20px 20px #fff;
+    margin: 50px 0 -100px 0;
+}
+
+
+.summary{
+    background-color: $backgroundColor;
+    padding: 150px 0 100px 0;
+    font-family: $mainFont;
+}
+
+.about {
+    display: flex;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+        div {
+            width: 50%;
+        }
+    }
+    
+    
+.infoImage01{
+    order: -1;
+}
