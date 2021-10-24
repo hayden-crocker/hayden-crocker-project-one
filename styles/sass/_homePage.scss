@@ -32,14 +32,12 @@
 
 .about {
     display: flex;
-    flex-basis: 50%;
     flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
         div {
             flex-basis: 50%;
             position: relative;
-            padding: 5%;
-            flex-shrink: 2;
-            flex-grow: 2;
                 img {
                     width: 80%;
                     position: absolute;
@@ -47,21 +45,33 @@
         }
 }
 
+.about h3{
+    margin: 0;
+}
+
+.infoText01 {
+    padding-left: 100px;
+    margin-bottom: 15px;
+}
+
 .infoImage01{
     order: -1;
     background-color: #a82706;
-    margin-top: -20px;
-    margin-bottom: 4%;
-    padding: 5%;
+    box-shadow: 15px 0 #a82706;
+    padding: 12%; 
+    position: absolute;
+    top: -15px;
         img {
-            top: -20px;
-            right: 20px;
+            top: -30px;
+            right: 0;
         }
 }
 
 .infoText02{
     text-align: right;
-    padding-top: 0;
+    padding: 0 85px 60px;
+    align-self: flex-start;
+    margin-top: 70px;
         p {
             margin-right: 0;
         }
@@ -69,11 +79,14 @@
 
 .infoImage02{
     background-color: $primaryColor;
-    margin-top: 20px;
-    margin-bottom: -50px;
+    padding: 12%;
+    position: absolute;
+    top: 35px;
+    right: -15px;
+    margin-top: 70px;
         img {
-            top: -20px;
-            left: -20px;
+            bottom: 15px;
+            left: -15px;
         }
 }
 
@@ -85,7 +98,7 @@
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 10% 40% 10% 40%;
-            gap: 20px 100px;
+            gap: 20px 70px;
             width: 70%;
                 & a{
                     position: relative;
@@ -100,6 +113,10 @@
                         }
                 }
         }
+}
+
+.directory p{
+    margin: 0;
 }
 
 .journey{
