@@ -4,6 +4,7 @@
 @import 'nav';
 @import 'homePage';
 @import 'buttons';
+@import 'footer';
 
 
 // FONT AWESOME ICONS
@@ -33,3 +34,26 @@ header {
             margin: 0;
         }
 }
+
+a {
+    text-decoration: none;
+}
+
+// .blogHeader{
+//   background-image: url(../assets/blog-image-1.jpg);
+//   height: 30vh;
+//   background-size: cover;
+//   align-items: flex-end;
+// }
+// .blogHeader h1 {
+//   margin: 0 0 -45px 0;
+// }
+// .contactHeader{
+//   background-image: url(../assets/contact-image-1.jpg);
+//   height: 40vh;
+//   background-size: cover;
+//   align-items: flex-end;
+// }
+// .contactHeader h1 {
+//   margin: 0 0 -45px 0
+// }
