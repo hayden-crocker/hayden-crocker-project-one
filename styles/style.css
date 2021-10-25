@@ -202,15 +202,6 @@ template {
   display: none;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: 0;
-}
-
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -275,46 +266,6 @@ header {
   background-color: #f6a823;
 }
 
-header {
-  background-color: #f6a823;
-}
-
-html {
-  font-size: 125%;
-}
-
-h1,
-h2,
-h3,
-h4,
-a {
-  text-transform: uppercase;
-}
-
-h2 {
-  margin: 0;
-  font-size: 2.1rem;
-  color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-size: 1.6rem;
-  color: #2c2c2c;
-  font-family: "Roboto", sans-serif;
-}
-
-p {
-  margin-right: 20%;
-  line-height: 1.5rem;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
-}
-
-header {
-  background-color: #f6a823;
-}
-
 .topNav ul {
   background-color: #f6a823;
   width: 100%;
@@ -328,7 +279,7 @@ header {
 }
 .topNav ul li {
   list-style: none;
-  padding: 30px 15px;
+  padding: 30px 20px;
 }
 .topNav ul li a {
   color: #2c2c2c;
@@ -344,7 +295,7 @@ header {
 }
 .topNav li:nth-child(3) p {
   margin: 0;
-  padding: 20px 25px;
+  padding: 20px 35px;
   font-size: 2rem;
   font-family: "Lora", serif;
   text-transform: uppercase;
@@ -365,8 +316,7 @@ header {
 
 .headerText {
   position: absolute;
-  top: 30%;
-  left: -5%;
+  margin-bottom: 125px;
   width: auto;
 }
 
@@ -375,17 +325,21 @@ header {
       -ms-flex-positive: 1;
           flex-grow: 1;
   font-size: 125px;
+  margin-left: 60px;
 }
 
 .headerImage {
+  margin: 50px 0 -100px 0;
+}
+.headerImage img {
   -webkit-box-shadow: 20px 20px #fff;
           box-shadow: 20px 20px #fff;
-  margin: 50px 0 -100px 0;
+  width: calc(100% - 20px);
 }
 
 .summary {
   background-color: #f0efed;
-  padding: 150px 0 100px 0;
+  padding: 150px 0 150px 0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -455,7 +409,7 @@ header {
 
 .links {
   background-color: #f0efed;
-  padding: 5% 0;
+  padding: 100px 0;
 }
 .links .directory {
   display: grid;
@@ -470,7 +424,7 @@ header {
 .links .directory a i {
   position: absolute;
   top: 45px;
-  right: 20px;
+  right: 30px;
   padding: 10px;
   color: #2c2c2c;
   background-color: #f6a823;
@@ -496,17 +450,21 @@ header {
 }
 
 .journeyImage {
-  width: 82%;
+  width: 100%;
 }
 
+.journeyText {
+  padding-left: 80px;
+}
 .journeyText p {
   margin: auto 0;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
   gap: 40px;
   padding: 70px 0;
 }
@@ -514,14 +472,14 @@ header {
 button {
   background-color: #06dcf3;
   border: none;
-  padding: 10px 20px;
+  padding: 15px 20px;
   margin-top: 1rem;
 }
 button a {
   text-decoration: none;
   font-size: 1rem;
   color: #2c2c2c;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 footer {
@@ -531,6 +489,7 @@ footer p {
   text-align: center;
   color: #fff;
   margin: 0;
+  padding: 10px 0;
 }
 
 img {

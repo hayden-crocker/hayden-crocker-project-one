@@ -8,25 +8,28 @@
 
 .headerText{
     position: absolute;
-    top: 30%;
-    left: -5%;
+    margin-bottom: 125px;
     width: auto;
 }
 
 .homePage h1{
     flex-grow: 1;
     font-size: 125px;
+    margin-left: 60px;
 }
 
 .headerImage {
-    box-shadow: 20px 20px #fff;
     margin: 50px 0 -100px 0;
+        img {
+            box-shadow: 20px 20px #fff;
+            width: calc(100% - 20px);
+        }
 }
 
 
 .summary{
     background-color: $backgroundColor;
-    padding: 150px 0 100px 0;
+    padding: 150px 0 150px 0;
     font-family: $mainFont;
 }
 
@@ -83,7 +86,6 @@
     top: 35px;
     right: 0px;
     align-self: start;
-    // margin-top: 70px;
         img {
             bottom: 15px;
             left: -15px;
@@ -93,7 +95,7 @@
 
 .links{
     background-color: $backgroundColor;
-    padding: 5% 0;
+    padding: 100px 0;
         .directory {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
@@ -105,7 +107,7 @@
                         & i{
                             position: absolute;
                             top: 45px;
-                            right: 20px;
+                            right: 30px;
                             padding: 10px;
                             color: $fontColor;
                             background-color: $primaryColor;
@@ -133,17 +135,21 @@
 }
 
 .journeyImage{
-    width: 82%;
+    width: 100%;
 }
 
-.journeyText p {
-    margin: auto 0;
-    padding: 10px 0;
+.journeyText {
+    padding-left: 80px;
+        p{
+            margin: auto 0;
+            padding: 20px 0;
+        }
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
     gap: 40px;
     padding: 70px 0;
 }
