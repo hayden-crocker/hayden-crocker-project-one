@@ -31,12 +31,11 @@
 }
 
 .about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     position: relative;
         div {
-            flex-basis: 50%;
             position: relative;
                 img {
                     width: 80%;
@@ -50,17 +49,17 @@
 }
 
 .infoText01 {
-    padding-left: 100px;
-    margin-bottom: 15px;
+    padding: 70px 0 30px 100px;
 }
 
 .infoImage01{
     order: -1;
     background-color: #a82706;
     box-shadow: 15px 0 #a82706;
-    padding: 12%; 
+    padding: 24%; 
     position: absolute;
     top: -15px;
+    align-self: start;
         img {
             top: -30px;
             right: 0;
@@ -70,8 +69,7 @@
 .infoText02{
     text-align: right;
     padding: 0 85px 60px;
-    align-self: flex-start;
-    margin-top: 70px;
+    margin-top: 20px;
         p {
             margin-right: 0;
         }
@@ -79,11 +77,13 @@
 
 .infoImage02{
     background-color: $primaryColor;
-    padding: 12%;
+    padding: 25%;
     position: absolute;
+    align-self: start;
     top: 35px;
-    right: -15px;
-    margin-top: 70px;
+    right: 0px;
+    align-self: start;
+    // margin-top: 70px;
         img {
             bottom: 15px;
             left: -15px;
@@ -96,8 +96,8 @@
     padding: 5% 0;
         .directory {
             display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 10% 40% 10% 40%;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+            grid-template-rows: 50% 50%;
             gap: 20px 70px;
             width: 70%;
                 & a{

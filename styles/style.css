@@ -390,19 +390,12 @@ header {
 }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   position: relative;
 }
 .about div {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   position: relative;
 }
 .about div img {
@@ -415,8 +408,7 @@ header {
 }
 
 .infoText01 {
-  padding-left: 100px;
-  margin-bottom: 15px;
+  padding: 70px 0 30px 100px;
 }
 
 .infoImage01 {
@@ -426,9 +418,11 @@ header {
   background-color: #a82706;
   -webkit-box-shadow: 15px 0 #a82706;
           box-shadow: 15px 0 #a82706;
-  padding: 12%;
+  padding: 24%;
   position: absolute;
   top: -15px;
+  -ms-flex-item-align: start;
+      align-self: start;
 }
 .infoImage01 img {
   top: -30px;
@@ -438,9 +432,7 @@ header {
 .infoText02 {
   text-align: right;
   padding: 0 85px 60px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .infoText02 p {
   margin-right: 0;
@@ -448,11 +440,13 @@ header {
 
 .infoImage02 {
   background-color: #f6a823;
-  padding: 12%;
+  padding: 25%;
   position: absolute;
+  -ms-flex-item-align: start;
+      align-self: start;
   top: 35px;
-  right: -15px;
-  margin-top: 70px;
+  right: 0px;
+  align-self: start;
 }
 .infoImage02 img {
   bottom: 15px;
@@ -465,8 +459,8 @@ header {
 }
 .links .directory {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 40% 10% 40%;
+  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  grid-template-rows: 50% 50%;
   gap: 20px 70px;
   width: 70%;
 }
