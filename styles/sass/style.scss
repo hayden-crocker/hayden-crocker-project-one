@@ -5,6 +5,7 @@
 @import 'homePage';
 @import 'buttons';
 @import 'footer';
+@import 'contactPage';
 
 
 // FONT AWESOME ICONS
@@ -27,7 +28,6 @@ img {
 }
 
 header {
-    background-color: $primaryColor;
     font-family: $h1Font;
         h1 {
             @include fontSize(5rem);

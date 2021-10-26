@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.homePage {
+    background-color: $primaryColor;
+}
+
 .headerText{
     position: absolute;
     margin-bottom: 125px;
@@ -13,7 +17,6 @@
 }
 
 .homePage h1{
-    flex-grow: 1;
     font-size: 125px;
     margin-left: 60px;
 }

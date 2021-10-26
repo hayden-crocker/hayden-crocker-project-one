@@ -1,0 +1,89 @@
+
+.contactHeader{
+    background-image: url(./../assets/contact-image-1.jpg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    align-items: flex-end;
+        h1 {
+            padding-top: 330px;
+        }
+}
+
+.contact{
+    background-color: $backgroundColor;
+    display: grid;
+    grid-template-columns: 400px 2fr;
+    grid-template-rows: 1fr;
+    padding: 100px;
+}
+
+.contactInfo{
+    background-color: white;
+    height: 270px;
+        .socials{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px 70px 20px 0;
+            margin: 0;
+            li{
+                list-style: none;
+                    a{
+                        color: $primaryColor;
+                        font-size: 1.2rem;
+                    }
+            }
+        }
+}
+
+.mailingInfo{
+        a{
+            text-transform: lowercase;
+            color: #000;
+            font-family: $mainFont;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+                ~.address{
+                    padding-top: 20px;
+                        p{
+                            padding: 0;
+                            margin: 0;
+                            font-size: .8rem;
+                            line-height: 1.3rem;    
+                        }
+                }
+        }
+}
+
+form{
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+        input {
+            border: none;
+            padding-left: 20px;
+        }
+                textarea, 
+                button{
+                    border: none;
+                    grid-column: 1 / -1;
+                }
+}
+
+textarea{
+    padding: 40px 0 0 20px;
+    resize: none;
+}
+
+button{
+    margin: 0;
+        a{
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+}
+
+::placeholder {
+    font-style: italic;
+}
