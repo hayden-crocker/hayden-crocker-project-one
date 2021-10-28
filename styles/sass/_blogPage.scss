@@ -1,3 +1,6 @@
+// BLOG PAGE STYLINGS START HERE
+
+// BLOG PAGE HEADER
 
 .blogHeader{
     background-image: url(./../assets/blog-image-1.jpg);
@@ -8,6 +11,8 @@
         padding-top: 260px;
     }
 }
+
+// MAIN STYLINGS START HERE
 
 .blog{
     background-color: $backgroundColor;
@@ -66,6 +71,8 @@
         }
     }
 }
+
+// BLOG POST STYLINGS 
 
 .blogPosts{
     display: grid;

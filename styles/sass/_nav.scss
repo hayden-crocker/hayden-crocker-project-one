@@ -1,3 +1,5 @@
+// NAVIGATION STYLINGS START HERE! 
+
 .topNav ul {
     background-color: $primaryColor;
     width: 100%;
@@ -30,6 +32,8 @@
             text-transform: uppercase;
         }
 }
+
+// FOR DROP DOWN MOBILE MENU
 
 nav.mobileMenu{
     position: relative;

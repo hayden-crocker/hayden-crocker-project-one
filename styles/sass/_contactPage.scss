@@ -1,4 +1,7 @@
+//  CONTACT PAGE STYLINGS 
 
+
+// CONTACT HEADER STYLINGS 
 .contactHeader{
     background-image: url(./../assets/contact-image-1.jpg);
     height: 400px;
@@ -9,6 +12,8 @@
             padding-top: 330px;
         }
 }
+
+// MAIN STYLINGS START HERE 
 
 .contact{
     background-color: $backgroundColor;
@@ -54,6 +59,8 @@
                 }
         }
 }
+
+// FORM STYLINGS 
 
 form{
     display: grid;

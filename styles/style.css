@@ -226,10 +226,6 @@ html {
   overflow: hidden;
 }
 
-header {
-  background-color: #f6a823;
-}
-
 html {
   font-size: 125%;
 }
@@ -260,10 +256,6 @@ p {
   line-height: 1.5rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
-}
-
-header {
-  background-color: #f6a823;
 }
 
 .topNav ul {
@@ -353,7 +345,6 @@ ul.mobileMenu li a {
   position: absolute;
   margin-bottom: 125px;
   width: auto;
-  bottom: 30%;
 }
 
 .homePage h1 {
