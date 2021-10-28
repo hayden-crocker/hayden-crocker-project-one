@@ -343,7 +343,7 @@ ul.mobileMenu li a {
 
 .headerText {
   position: absolute;
-  margin-bottom: 125px;
+  margin-top: -125px;
   width: auto;
 }
 
