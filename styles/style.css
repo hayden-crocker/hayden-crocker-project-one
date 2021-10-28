@@ -353,6 +353,7 @@ ul.mobileMenu li a {
   position: absolute;
   margin-bottom: 125px;
   width: auto;
+  bottom: 30%;
 }
 
 .homePage h1 {
