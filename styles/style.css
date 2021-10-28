@@ -279,7 +279,7 @@ p {
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
 }
-.topNav ul li a:hover, .topNav ul li a:focus {
+.topNav ul li a:hover, .topNav ul li a:focus-within {
   color: #f0efed;
 }
 
@@ -743,6 +743,11 @@ button a {
   font-size: 1rem;
   color: #2c2c2c;
   font-weight: 700;
+}
+
+button:hover,
+button:focus {
+  border: 5px solid #f6a823;
 }
 
 footer {

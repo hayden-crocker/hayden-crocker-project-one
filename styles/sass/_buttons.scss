@@ -11,3 +11,9 @@ button {
             font-weight: 700;
         }
 }
+
+
+button:hover,
+button:focus{
+    border: 5px solid $primaryColor;
+}
