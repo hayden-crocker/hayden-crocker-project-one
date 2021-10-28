@@ -45,13 +45,11 @@
     grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     position: relative;
-        div {
-            position: relative;
-                img {
-                    width: 80%;
-                    position: absolute;
-                }
+        img {
+            width: 80%;
+            position: absolute;
         }
+    
 }
 
 .about h3{
@@ -67,10 +65,11 @@
     background-color: #a82706;
     box-shadow: 15px 0 #a82706;
     padding: 24%; 
-    position: absolute;
+    position: relative;
     top: -15px;
     align-self: start;
         img {
+            position: absolute;
             top: -30px;
             right: 0;
         }
@@ -88,12 +87,13 @@
 .infoImage02{
     background-color: $primaryColor;
     padding: 25%;
-    position: absolute;
+    position: relative;
     align-self: start;
     top: 35px;
     right: 0px;
     align-self: start;
         img {
+            position: absolute;
             bottom: 15px;
             left: -15px;
         }
@@ -112,7 +112,7 @@
                 & a{
                     position: relative;
                         & i{
-                            position: absolute;
+                            position:absolute;
                             top: 45px;
                             right: 30px;
                             padding: 10px;

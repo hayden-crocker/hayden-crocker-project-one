@@ -309,7 +309,7 @@ nav.mobileMenu {
 .fa-bars {
   visibility: hidden;
   position: absolute;
-  top: -60px;
+  top: 20px;
   left: 50px;
   font-size: 2rem;
   z-index: 10;
@@ -317,6 +317,7 @@ nav.mobileMenu {
 
 ul.mobileMenu {
   visibility: hidden;
+  margin: 0;
   padding: 0;
   left: 0;
   background-color: #f0efed;
@@ -380,10 +381,7 @@ ul.mobileMenu li a {
   grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
   position: relative;
 }
-.about div {
-  position: relative;
-}
-.about div img {
+.about img {
   width: 80%;
   position: absolute;
 }
@@ -404,12 +402,13 @@ ul.mobileMenu li a {
   -webkit-box-shadow: 15px 0 #a82706;
           box-shadow: 15px 0 #a82706;
   padding: 24%;
-  position: absolute;
+  position: relative;
   top: -15px;
   -ms-flex-item-align: start;
       align-self: start;
 }
 .infoImage01 img {
+  position: absolute;
   top: -30px;
   right: 0;
 }
@@ -426,7 +425,7 @@ ul.mobileMenu li a {
 .infoImage02 {
   background-color: #f6a823;
   padding: 25%;
-  position: absolute;
+  position: relative;
   -ms-flex-item-align: start;
       align-self: start;
   top: 35px;
@@ -434,6 +433,7 @@ ul.mobileMenu li a {
   align-self: start;
 }
 .infoImage02 img {
+  position: absolute;
   bottom: 15px;
   left: -15px;
 }
@@ -792,11 +792,14 @@ a {
     visibility: visible;
   }
 
-  .topNav li {
+  .topNav ul li {
     visibility: hidden;
+    padding: 0;
+    font-size: 0.2rem;
   }
 
-  .fa-bars:hover ul.mobileMenu {
+  .fa-bars:hover ul.mobileMenu,
+.fa-bars:focus-within ul.mobileMenu {
     visibility: visible;
   }
 
@@ -887,9 +890,45 @@ a {
             flex-direction: column;
   }
 }
+@media (max-width: 665px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .about div {
+    width: calc(50% - 20px);
+    padding: 10px;
+    margin: 10px;
+    top: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+
+  .infoText01,
+.infoText02 {
+    text-align: left;
+    padding: 20px 280px 20px 20px;
+  }
+
+  .about div img {
+    position: relative;
+    top: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 50px 0;
+  }
+}
 @media (max-width: 590px) {
   .wrapper {
     width: 90%;
+  }
+
+  .topNav ul {
+    padding: 0;
   }
 
   h3 {
@@ -904,22 +943,18 @@ a {
     left: 0;
   }
 
-  .about div img {
-    width: 60%;
-    left: 15%;
-  }
-
-  .infoText01,
-.infoText02 {
-    text-align: left;
-    padding: 20px 280px 20px 20px;
-  }
-
   .links .directory {
     width: 55%;
   }
   .links .directory p {
     padding-right: 100px;
+  }
+
+  .links .directory div {
+    width: 80%;
+  }
+  .links .directory div p {
+    padding: 0;
   }
 
   .journeyText {
@@ -939,8 +974,18 @@ a {
   }
 }
 @media (max-width: 380px) {
-  .about div img {
-    width: 50%;
-    left: 3%;
+  .homePage h1 {
+    font-size: 2.9rem;
+  }
+
+  .flexContainer .headerText {
+    top: -10px;
+  }
+
+  .links .directory {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .links .directory .links .directory p {
+    font-size: 0.6rem;
   }
 }
