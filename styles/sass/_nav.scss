@@ -30,3 +30,32 @@
             text-transform: uppercase;
         }
 }
+
+nav.mobileMenu{
+    position: relative;
+}
+
+.fa-bars {
+    visibility: hidden;
+    position: absolute;
+    top: -60px;
+    left: 50px;
+    font-size: 2rem;
+    z-index: 10;
+}
+
+ul.mobileMenu {
+    visibility: hidden;
+    padding: 0;
+    left: 0;
+    background-color: $backgroundColor;
+    border: 5px solid #05afc1;
+        li{
+            list-style: none;
+            padding: 10px;
+                a{
+                    color: $fontColor;
+                    border-bottom: 1px dashed $primaryColor;
+                }
+        }
+}

@@ -8,8 +8,6 @@
 @import 'buttons';
 @import 'footer';
 
-
-
 // FONT AWESOME ICONS
 
 // HOME PAGE
@@ -41,21 +39,144 @@ a {
     text-decoration: none;
 }
 
-// .blogHeader{
-//   background-image: url(../assets/blog-image-1.jpg);
-//   height: 30vh;
-//   background-size: cover;
-//   align-items: flex-end;
-// }
-// .blogHeader h1 {
-//   margin: 0 0 -45px 0;
-// }
-// .contactHeader{
-//   background-image: url(../assets/contact-image-1.jpg);
-//   height: 40vh;
-//   background-size: cover;
-//   align-items: flex-end;
-// }
-// .contactHeader h1 {
-//   margin: 0 0 -45px 0
-// }
+// RESPONSIVE STYLINGS! 
+
+@media (max-width: 980px) {
+
+    .fa-bars{
+        visibility: visible;
+    }
+
+    .topNav li{
+        visibility:hidden;
+    }
+
+    .fa-bars:hover ul.mobileMenu {
+        visibility: visible;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .homePage h1 {
+        font-size: 4rem;
+        margin-top: 50px;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+            .headerText{
+                top: 0;
+                left: 10%;
+                margin: 0;
+            }
+            .headerImage{
+                margin: 0;
+            }
+    }
+
+    .journey .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .journeyImage{
+            width: 50%;
+        }
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contactHeader,
+    .blogHeader{
+        height: 15vh;
+            h1{
+                padding: 0;
+            }
+    }
+
+    .blog .gridContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .aside{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr .5fr;
+        gap: 20px;
+    }
+
+    .blogAbout{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+    }
+
+    .aboutSophie{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 590px){
+    .wrapper{
+        width: 90%;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+
+    p{
+    font-size: .8rem;
+    }
+
+    .flexContainer .headerText {
+        left: 0;
+    }
+    
+    .about div img{
+        width: 60%;
+        left: 15%;
+    }
+
+    .infoText01,
+    .infoText02 {
+        text-align: left;
+        padding: 20px 280px 20px 20px;
+    }
+
+    .links .directory {
+        width: 55%;
+            p{
+                padding-right: 100px;
+            }
+    }
+
+    .journeyText{
+        padding: 0;
+    }
+
+    .contactInfo {
+        width: 100%;
+    }
+
+    form{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+            input {
+                padding: 20px;
+            }
+    }
+}
+
+@media (max-width: 380px) {
+
+    .about div img {
+        width: 50%;
+        left: 3%;
+    }
+}

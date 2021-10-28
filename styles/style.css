@@ -302,6 +302,35 @@ header {
   text-transform: uppercase;
 }
 
+nav.mobileMenu {
+  position: relative;
+}
+
+.fa-bars {
+  visibility: hidden;
+  position: absolute;
+  top: -60px;
+  left: 50px;
+  font-size: 2rem;
+  z-index: 10;
+}
+
+ul.mobileMenu {
+  visibility: hidden;
+  padding: 0;
+  left: 0;
+  background-color: #f0efed;
+  border: 5px solid #05afc1;
+}
+ul.mobileMenu li {
+  list-style: none;
+  padding: 10px;
+}
+ul.mobileMenu li a {
+  color: #2c2c2c;
+  border-bottom: 1px dashed #f6a823;
+}
+
 .flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,7 +416,7 @@ header {
 
 .infoText02 {
   text-align: right;
-  padding: 0 85px 60px;
+  padding: 0 100px 60px;
   margin-top: 20px;
 }
 .infoText02 p {
@@ -416,7 +445,6 @@ header {
 .links .directory {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-  grid-template-rows: 50% 50%;
   gap: 20px 70px;
   width: 70%;
 }
@@ -757,4 +785,162 @@ header h1 {
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .topNav li {
+    visibility: hidden;
+  }
+
+  .fa-bars:hover ul.mobileMenu {
+    visibility: visible;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .homePage h1 {
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+
+  .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexContainer .headerText {
+    top: 0;
+    left: 10%;
+    margin: 0;
+  }
+  .flexContainer .headerImage {
+    margin: 0;
+  }
+
+  .journey .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .journey .wrapper .journeyImage {
+    width: 50%;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contactHeader,
+.blogHeader {
+    height: 15vh;
+  }
+  .contactHeader h1,
+.blogHeader h1 {
+    padding: 0;
+  }
+
+  .blog .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    gap: 20px;
+  }
+
+  .blogAbout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+
+  .aboutSophie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 590px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .flexContainer .headerText {
+    left: 0;
+  }
+
+  .about div img {
+    width: 60%;
+    left: 15%;
+  }
+
+  .infoText01,
+.infoText02 {
+    text-align: left;
+    padding: 20px 280px 20px 20px;
+  }
+
+  .links .directory {
+    width: 55%;
+  }
+  .links .directory p {
+    padding-right: 100px;
+  }
+
+  .journeyText {
+    padding: 0;
+  }
+
+  .contactInfo {
+    width: 100%;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  form input {
+    padding: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .about div img {
+    width: 50%;
+    left: 3%;
+  }
 }

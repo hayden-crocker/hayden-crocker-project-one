@@ -1,3 +1,4 @@
+// HEADER STYLINGS
 
 .flexContainer{
     display: flex;
@@ -29,12 +30,15 @@
         }
 }
 
+// SUMMARY STYLINGS
 
 .summary{
     background-color: $backgroundColor;
     padding: 150px 0 150px 0;
     font-family: $mainFont;
 }
+
+// ABOUT STYLINGS
 
 .about {
     display: grid;
@@ -74,7 +78,7 @@
 
 .infoText02{
     text-align: right;
-    padding: 0 85px 60px;
+    padding: 0 100px 60px;
     margin-top: 20px;
         p {
             margin-right: 0;
@@ -95,6 +99,7 @@
         }
 }
 
+// DIRECTORY STYLINGS
 
 .links{
     background-color: $backgroundColor;
@@ -102,7 +107,6 @@
         .directory {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
-            grid-template-rows: 50% 50%;
             gap: 20px 70px;
             width: 70%;
                 & a{
@@ -123,6 +127,8 @@
 .directory p{
     margin: 0;
 }
+
+// JOURNEY STYLINGS
 
 .journey{
     background-color: $backgroundColor;
@@ -148,6 +154,8 @@
             padding: 20px 0;
         }
 }
+
+// GALLERY STYLINGS
 
 .gallery {
     display: grid;
