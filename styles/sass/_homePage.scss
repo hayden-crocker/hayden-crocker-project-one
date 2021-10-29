@@ -8,22 +8,18 @@
     align-items: center;
     position: relative;
 }
-
 .homePage {
     background-color: $primaryColor;
 }
-
 .headerText{
     position: absolute;
     margin-top: -125px;
     width: auto;
 }
-
 .homePage h1{
     font-size: 125px;
     margin-left: 60px;
 }
-
 .headerImage {
     margin: 50px 0 -100px 0;
         img {
@@ -53,15 +49,12 @@
         }
     
 }
-
 .about h3{
     margin: 0;
 }
-
 .infoText01 {
     padding: 70px 0 30px 100px;
 }
-
 .infoImage01{
     order: -1;
     background-color: #a82706;
@@ -76,7 +69,6 @@
             right: 0;
         }
 }
-
 .infoText02{
     text-align: right;
     padding: 0 100px 60px;
@@ -85,7 +77,6 @@
             margin-right: 0;
         }
 }
-
 .infoImage02{
     background-color: $primaryColor;
     padding: 25%;
@@ -125,7 +116,6 @@
                 }
         }
 }
-
 .directory p{
     margin: 0;
 }
@@ -144,11 +134,9 @@
                 }
         }
 }
-
 .journeyImage{
     width: 100%;
 }
-
 .journeyText {
     padding-left: 80px;
         p{

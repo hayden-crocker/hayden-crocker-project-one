@@ -22,13 +22,11 @@ img {
     width: 100%;
     display: block;
 }
-
 .wrapper {
     max-width: 1400px;
     width: 80%;
     margin: 0 auto;
 }
-
 header {
     font-family: $h1Font;
         h1 {
@@ -36,7 +34,6 @@ header {
             margin: 0;
         }
 }
-
 a {
     text-decoration: none;
 }
@@ -48,27 +45,22 @@ a {
     .fa-bars{
         visibility: visible;
     }
-
     .topNav ul li{
         visibility:hidden;
         padding: 0;
         font-size: .2rem;
     }
-
     .fa-bars:hover ul.mobileMenu,
     .fa-bars:focus-within ul.mobileMenu {
         visibility: visible;
     }
-
     header h1 {
         font-size: 3rem;
     }
-
     .homePage h1 {
         font-size: 4rem;
         margin-top: 50px;
     }
-
     .flexContainer {
         flex-direction: column;
             .headerText{
@@ -80,7 +72,6 @@ a {
                 margin: 0;
             }
     }
-
     .journey .wrapper{
         display: flex;
         flex-direction: column;
@@ -89,12 +80,10 @@ a {
             width: 50%;
         }
     }
-
     .contact{
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .contactHeader,
     .blogHeader{
         height: 15vh;
@@ -102,25 +91,21 @@ a {
                 padding: 0;
             }
     }
-
     .blog .gridContainer{
         grid-template-columns: 1fr;
     }
-
     .aside{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 1fr .5fr;
         gap: 20px;
     }
-
     .blogAbout{
         display: flex;
         justify-content: space-around;
         align-items: center;
         padding: 0;
     }
-
     .aboutSophie{
         display: flex;
         flex-direction: column;
@@ -132,7 +117,6 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
     .about div {
         width: calc(50% - 20px);
         padding: 10px;
@@ -140,13 +124,11 @@ a {
         top: 0;
         align-self: center;
     }
-
     .infoText01,
     .infoText02 {
         text-align: left;
         padding: 20px 280px 20px 20px;
     }
-
     .about div img{
         position: relative;
         top: 0;
@@ -159,45 +141,36 @@ a {
     .wrapper{
         width: 90%;
     }
-
     .topNav ul{
         padding: 0;
     }
-
     h3{
         font-size: 1.2rem;
     }
-
     p{
     font-size: .8rem;
     }
-
     .flexContainer .headerText {
         left: 0;
     }
-
     .links .directory {
         width: 55%;
             p{
                 padding-right: 100px;
             }
     }
-
     .links .directory div {
         width: 80%;
             p {
                 padding: 0;
             }
     }
-
     .journeyText{
         padding: 0;
     }
-
     .contactInfo {
         width: 100%;
     }
-
     form{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -212,11 +185,9 @@ a {
     .homePage h1 {
         font-size: 2.9rem;
     }
-
     .flexContainer .headerText{
         top: -10px;
     }
-
     .links .directory {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             .links .directory p{

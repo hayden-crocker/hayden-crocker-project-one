@@ -4,7 +4,6 @@
 html {
     font-size: 125%;
 }
-
 h1,
 h2,
 h3,
@@ -12,26 +11,21 @@ h4,
 a {
     text-transform: uppercase;
 }
-
 $mainFont: 'Roboto', sans-serif;
 $h1Font: 'Lora', serif; 
-
 @mixin fontSize($sizeValue) {
     font-size: $sizeValue;
     color: $fontColor;
 }
-
 h2{
     margin: 0;
     @include fontSize(2.1rem);
     font-family: $mainFont;
 }
-
 h3{
     @include fontSize(1.6rem);
     font-family: $mainFont;
 }
-
 p{
     margin-right: 20%;
     line-height: 1.5rem;

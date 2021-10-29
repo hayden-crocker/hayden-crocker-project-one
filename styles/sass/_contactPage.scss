@@ -22,7 +22,6 @@
     grid-template-rows: 1fr;
     padding: 100px;
 }
-
 .contactInfo{
     background-color: white;
     height: 270px;
@@ -40,7 +39,6 @@
             }
         }
 }
-
 .mailingInfo{
         a{
             text-transform: lowercase;
@@ -77,12 +75,10 @@ form{
                     grid-column: 1 / -1;
                 }
 }
-
 textarea{
     padding: 40px 0 0 20px;
     resize: none;
 }
-
 button{
     margin: 0;
         a{
@@ -90,7 +86,6 @@ button{
             font-weight: 400;
         }
 }
-
 ::placeholder {
     font-style: italic;
 }

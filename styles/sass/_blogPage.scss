@@ -27,7 +27,6 @@
         }
     }
 }
-
 .blogAbout,
 .posts{
     background-color: white;
@@ -38,7 +37,6 @@
         text-transform: none;
     }
 }
-
 .blogAbout{
     padding-top: 45px;
     margin: 0;
@@ -53,7 +51,6 @@
         }
     }
 }
-
 .posts {
     margin: 20px 0;
     padding: 15px 0;
@@ -80,7 +77,6 @@
     grid-template-rows: 2fr .1fr .1fr;
     gap: 20px;
 }
-
 .blogPosts article,
 .blogPosts .comment {
     background-color: white;
@@ -90,13 +86,11 @@
             padding-bottom: 20px;
         }
 }
-
 .blogPosts article,
 .comment:last-of-type{
     margin-bottom: 20px;
     border-bottom: 5px solid $primaryColor;
 }
-
 article h5{
     font-family: $mainFont;
     font-weight: 300;
@@ -107,11 +101,9 @@ article h5{
             font-weight: 400;
         }
 }
-
 .blogPosts .comment:nth-child(2){
     border-bottom: none;
 }
-
 .comment {
     display: grid;
     grid-template-columns: .3fr 2fr;
@@ -128,7 +120,6 @@ article h5{
                 }
     }
 }
-
 .blog button{
     margin: 0;
 }

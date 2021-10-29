@@ -21,7 +21,6 @@
                 }
         }
 }        
-
 .topNav li:nth-child(3){
     padding: 0;
         & p {
@@ -38,7 +37,6 @@
 nav.mobileMenu{
     position: relative;
 }
-
 .fa-bars {
     visibility: hidden;
     position: absolute;
@@ -47,7 +45,6 @@ nav.mobileMenu{
     font-size: 2rem;
     z-index: 10;
 }
-
 ul.mobileMenu {
     visibility: hidden;
     margin: 0;
