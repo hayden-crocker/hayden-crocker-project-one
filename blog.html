@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto:wght@300;500&display=swap"
       rel="stylesheet">
     <script src="https://kit.fontawesome.com/3ef22f007c.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    
     <title>Blog</title>
 </head>
 <body>
@@ -96,7 +96,7 @@
             cupiditate,
             ut alias repellat culpa ratione assumenda dolorem.</p>
         </article>
-        <div class="comment">
+        <article class="comment">
           <img src="./assets/blog-image-3.jpg" alt="a close up picture of a man">
           <div class="commentText">
             <h5>Tuesday October 9th, 2018 by Jeremy</h5>
@@ -104,29 +104,30 @@
             delectus non, beatae eligendi excepturi tenetur fuga error. Quas corporis officia fuga, doloremque voluptatem
             facilis minima atque laboriosam quidem fugiat excepturi voluptatum architecto itaque quod.</p>
           </div>
-        </div>
-        <div class="comment">
+        </article>
+        <article class="comment">
           <img src="./assets/blog-image-4.jpg" alt="a close up picture of a woman">
           <div class="commentText">
             <h5>Wednesday October 10th, 2018 by Julia</h5>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam officia totam qui repellendus nesciunt labore
             impedit aut unde, vitae repellat, esse quam ipsa dolorum nostrum quibusdam laborum sint! Ipsa.</p>
           </div>
-        </div>
-        <form action="submit">
-          <label class="srOnly" for="Name">Name</label>
-          <input type="text" name="Name" placeholder="Name" id="Name">
-          <label class="srOnly" for="email">Email address</label>
-          <input type="text" name="email" placeholder="Email address" id="email">
-          <label class="srOnly" for="comment">Comment</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-          <button type="submit"> <a href="#">Post Comment</a></button>
-        </form>
+        </article>
       </section>
+      <form action="submit">
+        <label class="srOnly" for="Name">Name</label>
+        <input type="text" name="Name" placeholder="Name" id="Name">
+        <label class="srOnly" for="email">Email address</label>
+        <input type="email" name="email" placeholder="Email address" id="email">
+        <label class="srOnly" for="comment">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
     </div>
   </main>
   <footer>
     <p>Copyright © 2018 HackerYou</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

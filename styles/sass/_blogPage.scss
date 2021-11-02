@@ -95,11 +95,9 @@ article h5{
     font-family: $mainFont;
     font-weight: 300;
     font-style: italic;
-        a {
-            text-transform: none;
-            color: #285e64;
-            font-weight: 400;
-        }
+    text-transform: none;
+    color: #285e64;
+    font-weight: 400;
 }
 .blogPosts .comment:nth-child(2){
     border-bottom: none;

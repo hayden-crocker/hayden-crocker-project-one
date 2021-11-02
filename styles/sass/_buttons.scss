@@ -5,11 +5,10 @@ button {
     border: none;
     padding: 15px 20px;
     margin-top: 1rem;
-        a{
-            text-decoration: none;
-            @include fontSize (1rem);
-            font-weight: 700;
-        }
+    text-transform: uppercase;
+    text-decoration: none;
+    @include fontSize (1rem);
+    font-weight: 700;
 }
 button:hover,
 button:focus{

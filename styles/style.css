@@ -700,8 +700,6 @@ article h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
-}
-article h5 a {
   text-transform: none;
   color: #285e64;
   font-weight: 400;
@@ -737,8 +735,7 @@ button {
   border: none;
   padding: 15px 20px;
   margin-top: 1rem;
-}
-button a {
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 1rem;
   color: #2c2c2c;
